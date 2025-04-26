@@ -61,7 +61,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 50nchpx;
   margin-bottom: 16px;
 }
 .header-content h1 {
@@ -90,7 +90,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .extension-card {
@@ -124,12 +124,13 @@ p {
 
 .extension-card-header-info p {
   margin-bottom: 40px;
-  color: var(--neutral-400);
+  color: var(--neutral-600);
   font-size: 0.875rem;
   font-weight: 400px;
 }
 
 .extension-card-buttons {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,7 +142,56 @@ p {
   border: 1px solid var(--neutral-200);
   background: var(--neutral-0);
   cursor: pointer;
+  color: var(--neutral-800);
 }
 
-.extensions-card-toggle {
+.extension-card-buttons button:hover {
+  background: var(--neutral-100);
+  border: 1px solid var(--neutral-100);
+  animation: none;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: var(--neutral-300);
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background: var(--neutral-0);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #c7221a;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(18px);
 }
