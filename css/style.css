@@ -61,7 +61,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 50nchpx;
   margin-bottom: 16px;
 }
 .header-content h1 {
@@ -147,7 +147,6 @@ p {
 
 .extension-card-buttons button:hover {
   background: var(--neutral-100);
-
   border: 1px solid var(--neutral-100);
   animation: none;
 }
