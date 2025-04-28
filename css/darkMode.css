@@ -1,0 +1,94 @@
+@import url("./global.css");
+
+/* Dark Mode */
+#container.light {
+  background: var(--light-gradient);
+}
+
+#container.dark {
+  background: var(--dark-gradient);
+  color: var(--neutral-0);
+}
+
+.toggle-dark-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  background: var(--neutral-300);
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.toggle-dark-mode img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-dark-mode img.active {
+  display: inline-block;
+  opacity: 1;
+}
+
+#container.dark .dark-mode {
+  background: var(--neutral-900);
+}
+
+#container.dark .barra-superior {
+  background-color: var(--neutral-800);
+  border: none;
+}
+
+#container.dark .header-content h1 {
+  color: #fff;
+}
+
+#container.dark .header-content button {
+  background: var(--neutral-700);
+  color: var(--neutral-0);
+}
+
+#container.dark .header-content button:hover {
+  background: var(--red-50);
+  color: var(--neutral-900);
+}
+
+#container.dark .extension-card {
+  background: var(--neutral-700);
+  border: 1px solid var(--neutral-0);
+}
+
+#container.dark .extension-card h2 {
+  color: var(--neutral-0);
+}
+
+#container.dark .extension-card p {
+  color: var(--neutral-300);
+}
+
+#container.dark .extension-card-buttons button {
+  color: var(--neutral-0);
+  background: var(--neutral-700);
+}
+
+#container.dark .extension-card-buttons button:hover {
+  color: var(--neutral-900);
+  background: var(--red-50);
+  border: 1px solid var(--neutral-900);
+}
+
+#container.dark .slider {
+  background: var(--neutral-600);
+}
+
+#container.dark .toggle-switch input:checked + .slider {
+  background: var(--red-50);
+}

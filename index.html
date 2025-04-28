@@ -11,10 +11,19 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" class="light">
     <section id="header-section">
       <div class="barra-superior">
-        <img src="./assets/images/logo.svg" alt="">
+        <div class="barra-superior-logo">
+          <img src="./assets/images/logo.png" alt="">
+          <h1>Extensions</h1>
+        </div>
+        <div class="dark-mode">
+          <button class="toggle-dark-mode">
+            <img id="moon-icon" class="active" src="./assets/images/icon-moon.svg" alt="">
+            <img id="sun-icon" src="./assets/images/icon-sun.svg" alt="">
+          </button>
+        </div>
       </div>
       <div class="header-content">
         <h1>Extensions List</h1>
@@ -245,7 +254,7 @@
 
     </section>
   </div>
-  <script src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

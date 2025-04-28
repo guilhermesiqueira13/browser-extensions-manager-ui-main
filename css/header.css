@@ -1,0 +1,49 @@
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--neutral-200);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--neutral-0);
+}
+
+.barra-superior-logo {
+  display: flex;
+  align-items: center;
+}
+
+.barra-superior-logo img {
+  width: 55px;
+  height: 55px;
+  fill: red;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.header-content h1 {
+  font-size: 2rem;
+  color: var(--neutral-900);
+}
+
+.header-content button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  border: 1px solid var(--neutral-200);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--neutral-0);
+  color: var(--neutral-900);
+  cursor: pointer;
+}
+
+.header-content button:hover {
+  color: var(--neutral-0);
+  background: var(--red-70);
+  border: none;
+}
