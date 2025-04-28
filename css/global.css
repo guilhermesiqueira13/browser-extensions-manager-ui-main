@@ -1,0 +1,51 @@
+:root {
+  /* Cores Neutras */
+  --neutral-900: #09153e;
+  --neutral-800: #212636;
+  --neutral-700: #2f364b;
+  --neutral-600: #545969;
+  --neutral-300: #c7c7c7;
+  --neutral-200: #d6e2f5;
+  --neutral-100: #ededed;
+  --neutral-0: #fbfdfe;
+  /* Vermelho */
+  --red-400: #f25c54;
+  --red-50: #de473f;
+  --red-70: #c7221a;
+  /* Gradiente */
+  --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+@font-face {
+  font-family: "NotoSans-Italic";
+  src: url("../assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../assets/fonts/NotoSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  font-family: "NotoSans";
+  padding: 40px 120px;
+  margin: 0;
+  min-height: 100vh;
+}

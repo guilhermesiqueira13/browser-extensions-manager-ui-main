@@ -1,0 +1,109 @@
+#extensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.extension-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--neutral-0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.extension-card-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.extension-card-header-logo img {
+  width: 60px;
+  height: 60px;
+}
+.extension-card-header-info {
+  margin-left: 20px;
+}
+
+.extension-card-header-info h2 {
+  margin: 0px 0px 10px;
+  color: var(--neutral-900);
+  font-family: "Notosans";
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.extension-card-header-info p {
+  margin-bottom: 40px;
+  color: var(--neutral-600);
+  font-size: 0.86rem;
+  font-weight: 400px;
+}
+
+.extension-card-buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extension-card-buttons button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--neutral-200);
+  background: var(--neutral-0);
+  cursor: pointer;
+  color: var(--neutral-800);
+}
+
+.extension-card-buttons button:hover {
+  background: var(--neutral-100);
+  border: 1px solid var(--neutral-100);
+  animation: none;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: var(--neutral-300);
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background: var(--neutral-0);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #c7221a;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(18px);
+}
