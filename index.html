@@ -28,14 +28,14 @@
       <div class="header-content">
         <h1>Extensions List</h1>
         <div>
-          <button>All</button>
-          <button>Active</button>
-          <button>Inactive</button>
+          <button id="filter-all">All</button>
+          <button id="filter-active">Active</button>
+          <button id="filter-inactive">Inactive</button>
         </div>
       </div>
     </section>
     <section id="extensions-grid">
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-devlens.svg" alt="">
@@ -46,14 +46,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
-          <label class="toggle-switch">
+          <button id="remove-button">Remove</button>
+          <label id="toggle-switch" class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-style-spy.svg" alt="">
@@ -64,14 +64,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-speed-boost.svg" alt="">
@@ -82,14 +82,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-json-wizard.svg" alt="">
@@ -100,14 +100,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-tab-master-pro.svg" alt="">
@@ -118,14 +118,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-viewport-buddy.svg" alt="">
@@ -136,14 +136,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-markup-notes.svg" alt="">
@@ -154,14 +154,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-grid-guides.svg" alt="">
@@ -172,14 +172,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-palette-picker.svg" alt="">
@@ -190,14 +190,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-link-checker.svg" alt="">
@@ -208,14 +208,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-dom-snapshot.svg" alt="">
@@ -226,14 +226,14 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>
           </label>
         </div>
       </div>
-      <div class="extension-card">
+      <div class="extension-card" data-active:="true">
         <div class="extension-card-header">
           <div class="extension-card-header-logo">
             <img src="./assets/images/logo-console-plus.svg" alt="">
@@ -244,7 +244,7 @@
           </div>
         </div>
         <div class="extension-card-buttons">
-          <button>Remove</button>
+          <button id="remove-button">Remove</button>
           <label class="toggle-switch">
             <input type="checkbox">
             <span class="slider"></span>

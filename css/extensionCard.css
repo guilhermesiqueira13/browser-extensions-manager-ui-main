@@ -63,6 +63,11 @@
   animation: none;
 }
 
+.extension-card-buttons button:focus-visible {
+  outline: 2px solid var(--red-70);
+  outline-offset: 1px;
+}
+
 .toggle-switch {
   position: relative;
   display: inline-block;
@@ -101,9 +106,22 @@
 }
 
 .toggle-switch input:checked + .slider {
-  background-color: #c7221a;
+  background: var(--red-70);
 }
 
 .toggle-switch input:checked + .slider:before {
   transform: translateX(18px);
+}
+
+.toggle-switch:focus-visible {
+  outline: 2px solid var(--red-70);
+  outline-offset: 1px;
+}
+
+.toggle-switch input:focus-visible + .slider {
+  outline: 2px solid var(--red-70);
+  outline-offset: 1px;
+  transition-property: background-color, transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }

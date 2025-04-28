@@ -17,7 +17,6 @@
 .barra-superior-logo img {
   width: 55px;
   height: 55px;
-  fill: red;
 }
 
 .header-content {
@@ -43,7 +42,10 @@
 }
 
 .header-content button:hover {
-  color: var(--neutral-0);
-  background: var(--red-70);
-  border: none;
+  background: var(--neutral-100);
+}
+
+.header-content button:focus-visible {
+  outline: 2px solid var(--red-70);
+  outline-offset: 1px;
 }
